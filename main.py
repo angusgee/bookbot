@@ -9,7 +9,7 @@ def get_args():
         return sys.argv[1]
 
 def get_book_contents(path):
-    with open(f'./books/{path}') as f:
+    with open(path) as f:
         return f.read()
 
 def print_output(path, word_count, dict_list):
